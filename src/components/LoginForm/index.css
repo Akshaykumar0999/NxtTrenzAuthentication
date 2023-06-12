@@ -1,0 +1,130 @@
+/* Write your CSS code here */
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.login-title {
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #0b69ff;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.website-logo-Mobile {
+  height: 60px;
+  width: 150px;
+  margin-bottom: 22px;
+}
+.website-login {
+  height: 40%;
+  width: 80%;
+  margin-bottom: 22px;
+}
+.website-logo-Desktop {
+  height: 60px;
+  width: 150px;
+  display: none;
+}
+.login-form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.input-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.login-button {
+  height: 42px;
+  width: 160px;
+  background-color: #0967d2;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.label-name {
+  font-size: 13px;
+  font-family: 'Roboto';
+  color: #475569;
+}
+.input {
+  height: 22px;
+  width: 95%;
+  background-color: #e2e8f0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.error-msg {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #ff0b37;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    height: 28px;
+    padding: 10px;
+  }
+  .label-name {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .input {
+    height: 24px;
+  }
+  .label-name {
+    font-size: 17px;
+  }
+  .website-logo-Mobile {
+    display: none;
+  }
+  .website-logo-Desktop {
+    display: flex;
+  }
+  .website-login {
+    height: 50%;
+    width: 42%;
+  }
+  .login-form-container {
+    height: 100%;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 20px;
+  }
+  .login-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .login-title {
+    display: none;
+  }
+}
